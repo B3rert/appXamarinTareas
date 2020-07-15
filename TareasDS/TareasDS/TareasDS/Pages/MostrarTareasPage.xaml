@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TareasDS.Pages.MostrarTareasPage">
+
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout 
+                Padding="10,30,10,30">
+
+                <StackLayout Padding="10,20,10,10">
+
+                    <Label 
+                        Text="ID TAREA:"/>
+                    <Label                    
+                        x:Name="IDLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label 
+                        Text="TITULO"/>
+                    <Label
+                        x:Name="TituloLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="OBSERVACION:"/>
+                    <Label
+                        x:Name="ObservacionLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="TIPO DE TAREAl:"/>
+                    <Label
+                        x:Name="TipoTLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="NIVEL DE PRIORIDAD:"/>
+                    <Label
+                        x:Name="PrioridadLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="ESTADO:"/>
+                    <Label
+                        x:Name="EstadoLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="FECHA:"/>
+
+                    <DatePicker
+                        x:Name="FechaPicker"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="TIEMPO ESTIMADO:"/>
+                    <Label
+                        x:Name="TimpoLabel"
+                        BackgroundColor="SkyBlue"
+                        TextColor="Black"/>
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>

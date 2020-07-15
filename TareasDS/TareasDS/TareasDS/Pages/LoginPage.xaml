@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TareasDS.Pages.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="logo0.jpg"
+                     Aspect="AspectFill"/>
+
+            <ScrollView>
+
+                <StackLayout  Padding="10,30,10,10">
+
+                    <Label Text=
+                       "PORTAL TICKETS"
+                       Font="25"
+                       HorizontalOptions="Center"/>
+
+                    <Image Source="logoo.png"
+                           WidthRequest="250"
+                           HeightRequest="150"/>
+
+                    <ActivityIndicator
+                        x:Name="WaitActivity"
+                        HorizontalOptions="Center"/>
+
+                    <!--<StackLayout
+                        Orientation="Horizontal">
+
+                        <Label
+                            Text="Recordar mis datos"
+                            HorizontalOptions="EndAndExpand"/>
+                        <CheckBox
+                            x:Name="DatosCheck"
+                            IsChecked="True"
+                            Color="RoyalBlue"/>
+
+
+                    </StackLayout>-->
+
+                    <Entry 
+                    
+                        x:Name="UserEntry"            
+                        Placeholder="Usuario"/>
+
+                    <Entry                    
+                        x:Name="PassEntry"            
+                        Placeholder="Contraseña"           
+                        IsPassword="True"/>
+
+                    <Button                    
+                        x:Name="IngressButton"            
+                        Text="Iniciar Sesion"            
+                        BorderRadius="22"            
+                        TextColor="White"            
+                        BackgroundColor="RoyalBlue"
+                        Clicked="IngressButton_Clicked"/>
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

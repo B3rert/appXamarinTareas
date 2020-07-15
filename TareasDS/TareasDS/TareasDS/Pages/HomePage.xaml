@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TareasDS.Pages.HomePage"
+             Title="Inicio">
+    
+    <ContentPage.Content>
+
+        <Grid>
+
+            <BoxView
+                BackgroundColor="White"/>
+
+            <StackLayout Padding="10,100,10,10">
+
+                <Label Text="Bienvenidos al Sistema"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Font="25" />
+
+                <Image Source="logoo.png"
+                   Aspect="Fill"
+                   HorizontalOptions="Center"/>
+
+                <Button
+                    x:Name="CerrarButton"
+                    Text="Cerrar sesion"
+                    BackgroundColor="RoyalBlue"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    BorderRadius="22"
+                    Clicked="CerrarButton_Clicked"/>
+
+            </StackLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+    
+</ContentPage>
